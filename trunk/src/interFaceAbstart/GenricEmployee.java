@@ -1,8 +1,8 @@
 package interFaceAbstart;
 
-public abstract class GenricEmployee {
+public class GenricEmployee {
 
-	public static EmployeeDetails getEmployeeDetials(long empId){
+	public EmployeeDetails getEmployeeDetials(long empId){
 		
 		EmployeeDetails empObj = new EmployeeDetails();		
 		

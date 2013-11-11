@@ -1,6 +1,6 @@
-package interFaceAbstart;
+package interFaceAbstart2;
 
-public class HerbiVore implements AnimlaInterface {
+public class Reptiles extends GenricAnimal implements AnimlaInterface{
 
 	@Override
 	public String getSound(String animalName) {
@@ -20,5 +20,8 @@ public class HerbiVore implements AnimlaInterface {
 		return null;
 	}
 	
+	public void reProductionMechanism(String animalType ){
+		System.out.println("This is will be having eggs");
+	}
 
 }

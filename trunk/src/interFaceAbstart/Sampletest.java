@@ -14,6 +14,8 @@ public class Sampletest {
 	
 	EmployeeDetails empObj = directorClass.getEmployeeDetials(empId);
 	
+	//GenricEmployee.getEmployeeDetials(empId);
+	
 	System.out.println("Emp Id:"+empObj.getId());
 	System.out.println("Emp name:"+empObj.getName());
 	System.out.println("Emp age:"+empObj.getAge());

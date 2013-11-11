@@ -1,6 +1,7 @@
 package wallet;
 
 public class Coin implements Comparable<Coin>{
+	
 	String name;
 	String value;
 	
@@ -8,6 +9,7 @@ public class Coin implements Comparable<Coin>{
 		this.name=name;
 		this.value=value;		
 	}
+	
 	
 	public int compareTo(Coin coin) {
 		return this.getName().compareTo(getName());

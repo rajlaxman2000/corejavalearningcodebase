@@ -37,7 +37,6 @@ public class WalletTest {
 	        }
         	
 		}while (true);
-        
 	}
 	
 }

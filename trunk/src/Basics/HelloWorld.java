@@ -14,7 +14,7 @@ public class HelloWorld {
 		test.add(1,5);
 		*/
 		//args = null;
-		System.out.println("args value in toString ::"+args.toString());
+		/*System.out.println("args value in toString ::"+args.toString());
 		System.out.println("args value in Class ::"+args.getClass());
 		System.out.println("args value ::"+args);
 		
@@ -23,6 +23,19 @@ public class HelloWorld {
 		name = new String("Rajesh");
 		
 		//System.out.println(name.contains("je"));
+		 * 497, 447, 
+		*/
+		
+		Integer newIntValue;
+		newIntValue= Integer.parseInt("khs");
+		
+		
+		Student.testmethod();
+		
+		//Integer.pa
+		
+		System.out.println(newIntValue.intValue());
+		
 	
 		
 		//System.out.println(x.doubleValue());
@@ -50,24 +63,14 @@ public class HelloWorld {
 		
 		//System.out.println(x);		
 		Short y = new Short((short)10);
-		
 		//System.out.println(y);
-		
 		//Student student = new Student(1);
-		
-		
 		int ab[] ={1,2};
 		
 		ab[0] = 10;
 		ab[1] = 20;
 		
-		System.out.println(ab);
+		//System.out.println(ab);
 		
-		
-		
-		
-		
-	}
-		
-		
+	}	
 }
