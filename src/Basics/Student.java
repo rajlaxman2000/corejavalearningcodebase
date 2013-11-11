@@ -15,7 +15,9 @@ public class Student {
 		this.id = id;
 		this.name = name;
 	}
-
+	public static void testmethod(){
+		System.out.println("I am getting displayed man");
+	}
 	public boolean equals (Object obj) {
 		
 		if (obj instanceof Student) {

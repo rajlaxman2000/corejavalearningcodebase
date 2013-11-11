@@ -1,4 +1,4 @@
-package interFaceAbstart;
+package interFaceAbstart2;
 
 public interface AnimlaInterface {
 

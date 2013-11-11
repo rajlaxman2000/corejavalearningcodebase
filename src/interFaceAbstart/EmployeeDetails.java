@@ -1,5 +1,10 @@
 package interFaceAbstart;
 
+/**
+ * 
+ * @author Rajesh_Duvvi
+ * This is good example for Abstraction and Encapsulation concepts
+ */
 public class EmployeeDetails {
 	
 	private String name;
