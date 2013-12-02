@@ -1,0 +1,49 @@
+1.	Given the Java declarations
+interface I { void foo(); }
+
+ 
+and
+ 
+
+
+class B extends A implements I { ... }
+ 
+
+which of the following statements is true? Circle one:
+
+(i) Class B must provide a defnition for foo(), no matter how class A is defined. (ii) Class B only needs to provide a definition of foo() if A does not.
+(iii) Class B only needs to provide a definition of foo() if A does not implement I.
+
+(iv) Class B inherits foo() from I, thus B does not have to provide a definition of
+foo().
+----------------------------------------------------------------
+
+
+(i)	T(x, y);  (ii)  this(x, y); (iii) super(x, y); (iv) super(x, y, z);
+
+public class T {
+	int r;
+	int s;
+	T(int x, int y) {
+		r = x;
+		s = y;
+	}
+}
+
+class S extends T {
+	int t;
+	public S(int x, int y, int z){
+	
+		// insert here the code
+		// that would do the correct initialization
+		// r= x and s= y t=z;
+	}
+}
+
+
+Class Test{
+	public void main(Stting[] args){
+		S s =new S(1,2,3);
+	}
+}
+ 

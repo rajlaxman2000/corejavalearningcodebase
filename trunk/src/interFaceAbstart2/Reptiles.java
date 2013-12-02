@@ -24,4 +24,10 @@ public class Reptiles extends GenricAnimal implements AnimlaInterface{
 		System.out.println("This is will be having eggs");
 	}
 
+	@Override
+	public void myMthod(String name) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
