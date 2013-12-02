@@ -1,0 +1,16 @@
+1.	Given the Java declarations
+interface I { void foo(); }
+
+ and
+ 
+class B extends A implements I { ... }
+ 
+
+which of the following statements is true? Circle one:
+
+(i) Class B must provide a defnition for foo(), no matter how class A is defined. 
+(ii) Class B only needs to provide a definition of foo() if A does not.
+(iii) Class B only needs to provide a definition of foo() if A does not implement I.
+
+(iv) Class B inherits foo() from I, thus B does not have to provide a definition of
+foo().
