@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Wallet Program</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js" type="text/javascript"></script>
+	
+	<script>
+		
+		function WalletService(){			 
+			var wallet;
+		};	
+		
+		WalletService.prototype.createCoin = function(coinName, coinValue){
+			var coin = new Object();
+			coin.name = coinName;
+			coin.value = coinValue;
+			return coin;
+		};
+		
+		WalletService.prototype.createWallet = function (){
+			var wallet = new Object();
+			// These coins list are coins with no duplicates
+			wallet.colOfCoins = new Array();
+			wallet.coinsCountMap =  new Hash();
+			return wallet;
+		};
+		
+		
+		WalletService.prototype.createCoin = function(coinName, coinValue){
+			var coin = new Object();
+			coin.name = coinName;
+			coin.value = coinValue;
+			 return coin;
+		};
+
+		WalletService.prototype.addCoin = function(coin){
+			var coinColSize = this.wallet.colOfCoins.size();
+			if( coinColSize>0){
+				if(this.wallet.coinsCountMap.get(coin.name)!= undefined){
+					this.wallet.coinsCountMap.set(coin.name,this.wallet.coinsCountMap.get(coin.name) + 1);
+				}else{
+					this.wallet.colOfCoins[coinColSize]=coin;
+					this.wallet.coinsCountMap.set(coin.name,1);
+				}	
+			}else{
+				this.wallet.colOfCoins[0]=coin;
+				this.wallet.coinsCountMap.set(coin.name,1);				
+			}
+			
+			
+		};
+		WalletService.prototype.displayWallet = function(){
+			var coins = this.wallet.colOfCoins;
+			var noOfCoins = this.wallet.colOfCoins.size();
+			var coinsMap =  this.wallet.coinsCountMap;
+			var displayString = "";
+			for (var i=0;i<noOfCoins;i++){
+				displayString = displayString+"Coin Name :: "+coins[i].name+"; Coin Value ::"+coins[i].value+"; Coin count ::"+coinsMap.get(coins[i].name)+"</br>";
+				//console.log( "Coin Name :: "+coins[i].name+"; Coin Value ::"+coins[i].value+"; Coin count ::"+coinsMap.get(coins[i].name));
+			}
+			document.getElementById("displayWallet").innerHTML = displayString;
+			
+		};
+		
+		WalletService.prototype.startProcess = function(coinName, coinValue){
+			//try to validate the inputs
+			var coinName1 = document.getElementById('coin_name').value;
+			var coinValue1 = document.getElementById('coin_value').value;
+			var coin = this.createCoin(coinName1,coinValue1);
+			this.addCoin(coin);
+			this.displayWallet();
+		};
+		
+		var walletService;
+		walletService = new WalletService();		
+		walletService.wallet = walletService.createWallet();
+	</script>
+	</head>
+	<body>
+			Enter coin name  : <input id="coin_name" value=""/>
+			</br>
+			Enter coin value  : <input id="coin_value" value=""/>
+			
+			<button type="button" onclick="walletService.startProcess('dollor','10 cents');">Keep in Wallet</button>
+			<br/><br/>
+			Wallet Contents : 
+			<div id="displayWallet">
+			</div>
+
+	</body>
+</html>
