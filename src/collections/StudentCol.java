@@ -12,9 +12,9 @@ public class StudentCol implements Comparable<StudentCol> {
 	@Override
 	public int compareTo(StudentCol std) {
 		
-		//return (this.age-std.getAge());
+		return this.sno-std.getSno();
 		
-		return (this.name).compareTo(std.getName());
+		//return (this.name).compareTo(std.getName());
 	}
 	
 	public StudentCol(){
