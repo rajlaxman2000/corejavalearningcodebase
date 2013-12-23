@@ -2,6 +2,7 @@ package collections;
 
 
 public class StudentForSet implements Comparable<StudentForSet>{
+
 	
 	private int sno;
 	
@@ -10,25 +11,12 @@ public class StudentForSet implements Comparable<StudentForSet>{
 	private int age;
 	
 	
-	@Override
-	public int compareTo(StudentForSet std) {
-		
-		return this.sno-std.getSno();
-		//return this.age-std.age;
-		//return (this.name).compareTo(std.getName());
-	}
-	
-	public StudentForSet(){
-		
-	}
-
 	public String toString(){
-		
 		return "Sno::"+this.sno+", Name::"+this.name+", Age::"+this.age+"\n";
 	}
-		
+	
 	public int hashCode(){
-		return age;
+		return sno+age+this.name.hashCode();
 	}
 	
 	public boolean equals(Object obj) {
@@ -45,11 +33,25 @@ public class StudentForSet implements Comparable<StudentForSet>{
 		return res;
 	}
 	
+
+	@Override
+	public int compareTo(StudentForSet std) {
+		
+		return this.sno-std.getSno();
+		//return this.age-std.age;
+		//return (this.name).compareTo(std.getName());
+	}
+
+	public StudentForSet(){
+		
+	}
+	
 	public StudentForSet(int sno, String name, int age){
 		this.sno=sno;
 		this.name=name;
 		this.age=age;
 	}
+
 
 	/**
 	 * @return the sno
