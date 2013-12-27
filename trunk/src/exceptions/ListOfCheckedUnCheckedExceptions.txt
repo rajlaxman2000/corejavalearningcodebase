@@ -1,0 +1,55 @@
+Unchecked
+	ArrayIndexOutOfBoundsException	
+	ClassCastException
+	IllegalArgumentException
+	IllegalStateException
+	NullPointerException
+	NumberFormatException
+	AssertionError
+	ExceptionInInitializerError
+	StackOverflowError
+	NoClassDefFoundError
+	----------------------
+	ArithmeticException
+	ArrayStoreException
+	BufferOverflowException
+	BufferUnderflowException
+	CannotRedoException
+	CannotUndoException
+	ClassCastException
+	CMMException
+	ConcurrentModificationException
+	DOMException
+	EmptyStackException
+	IllegalArgumentException
+	IllegalMonitorStateException
+	IllegalPathStateException
+	IllegalStateException
+	ImagingOpException
+	IndexOutOfBoundsException
+	MissingResourceException
+	NegativeArraySizeException
+	NoSuchElementException
+	NullPointerException
+	ProfileDataException
+	ProviderException
+	RasterFormatException
+	SecurityException
+	SystemException
+	UndeclaredThrowableException
+	UnmodifiableSetException
+	UnsupportedOperationException
+
+Checked
+	Exception
+	IOException
+	FileNotFoundException
+	ParseException
+	ClassNotFoundException
+	CloneNotSupportedException
+	InstantiationException
+	InterruptedException	
+	NoSuchMethodException	
+	NoSuchFieldException
+	
+	
