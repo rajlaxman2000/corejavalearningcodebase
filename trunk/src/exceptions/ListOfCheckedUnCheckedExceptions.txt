@@ -1,17 +1,8 @@
 Unchecked
-	ArrayIndexOutOfBoundsException	
-	ClassCastException
-	IllegalArgumentException
-	IllegalStateException
-	NullPointerException
-	NumberFormatException
-	AssertionError
-	ExceptionInInitializerError
-	StackOverflowError
-	NoClassDefFoundError
-	----------------------
 	ArithmeticException
 	ArrayStoreException
+	AssertionError
+	AssertionError
 	BufferOverflowException
 	BufferUnderflowException
 	CannotRedoException
@@ -21,6 +12,7 @@ Unchecked
 	ConcurrentModificationException
 	DOMException
 	EmptyStackException
+	ExceptionInInitializerError
 	IllegalArgumentException
 	IllegalMonitorStateException
 	IllegalPathStateException
@@ -29,16 +21,20 @@ Unchecked
 	IndexOutOfBoundsException
 	MissingResourceException
 	NegativeArraySizeException
+	NoClassDefFoundError
 	NoSuchElementException
 	NullPointerException
+	NumberFormatException
 	ProfileDataException
 	ProviderException
 	RasterFormatException
 	SecurityException
+	StackOverflowError
 	SystemException
 	UndeclaredThrowableException
 	UnmodifiableSetException
 	UnsupportedOperationException
+
 
 Checked
 	Exception
