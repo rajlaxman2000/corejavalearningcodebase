@@ -1,0 +1,55 @@
+class EngineProblem extends Exception{}
+class FlatTire extends Exception{}
+class Vehicle{
+public void drive() throws EngineProblem{
+}
+class car extends Vehicle{
+public void drive() throws EngineProblem,FlatTire
+{
+}
+If a java compiler would compile this code without error-which doesn't,
+but lets assume it does;
+what would be the problem?
+Explain with an example of a situation where this would be a problem.
+-------------
+Why it doesn't complie: 
+	because we are not adhering the method over riding policies
+what would be the problem?
+	If we 
+Explain with an example of a situation where this would be a problem.
+	Lets assume we refer car object to the Vehicle, then if we get a an exception of Flat tyre then that would be big mess/ problem
+	bcz Vehicle drive mthod is not aware of the flat tyre exception
+	
+	
+Room-1		jan/07/14-Fed/06/14		Feb/07 - Mar-06	
+	Bed1		10					30
+	Bed2		12					12
+Room-2	
+	Bed3		20					25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
