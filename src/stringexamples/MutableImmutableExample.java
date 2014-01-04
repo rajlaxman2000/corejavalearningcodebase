@@ -11,13 +11,15 @@ public class MutableImmutableExample {
     	System.out.println( myPoint );    	
     	myPoint.setLocation( 1.0, 0.0 );    	
     	System.out.println( myPoint );
-
+    	
     	System.out.println("Immutbale presentation");
     	//Example of immutable class
     	String myString = new String( "old String" );
     	System.out.println( myString );
     	String afterModified = myString.replaceAll( "old", "new" );    	
     	System.out.println( myString );
+    	
+    	System.out.println(afterModified);
     	
     	// Another example   
     	/*
