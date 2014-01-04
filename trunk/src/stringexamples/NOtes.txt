@@ -1,0 +1,11 @@
+String is Immutable class
+
+StringBuilder and StringBuffer are mutable classes
+
+StringBuffer is was there from the begining
+It is thread safe, so it is  abit slow
+
+StringBuilder is introduced after 1.4
+It is not  a thread safe, So it is fast comparing to StringBuffer
+
+ 
