@@ -20,4 +20,14 @@ public abstract class ExtractorStrings {
 	final static String crossWordBookCostExtractor =".price .variant-final-price";
 	
 	final static String crossWordBaseUrl = "http://www.crossword.in/books/search?q=";
+	
+	// Youtube List links extractors
+	final static String youtubeListExtractor ="#browse-items-primary li ul.pl-video-list, li";
+	final static String youtubeListLinkExtractor ="data-video-id";
+	
+	//final static String crossWordBookTitleExtractor =".variant-title a";
+	//final static String crossWordBookAuthorExtractor =".contributors .ctbr-name a";
+	//final static String crossWordBookCostExtractor =".price .variant-final-price";
+	
+	final static String youtubeBaseUrl = "https://www.youtube.com/playlist?list=";
 }
